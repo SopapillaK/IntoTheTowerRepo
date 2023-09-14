@@ -26,7 +26,7 @@ public class PlayerCamera : MonoBehaviour
 
         yRotation += mouseX;
 
-        xRotation += mouseY;
+        xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f); // stops player from looking up and around/ down and under their head
 
         // rotate cam and orientation
