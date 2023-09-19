@@ -1,5 +1,6 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
-New Features:
-WASD movements
-First person camera
+#New Features:
+WASD movements,
+First person camera,
+Jumping
