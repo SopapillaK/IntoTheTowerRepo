@@ -8,8 +8,10 @@ public class Reticle : MonoBehaviour
 {
     private RectTransform reticle;
 
-    public float size;
-
+    public float restingSize;
+    public float maxSize;
+    public float speed;
+    private float currentSize;
 
     private void Start()
     {
@@ -20,4 +22,7 @@ public class Reticle : MonoBehaviour
     {
         
     }
+
 }
+
+//https://www.youtube.com/watch?v=-7DIdKTNjfQ
