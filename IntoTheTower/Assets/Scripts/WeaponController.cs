@@ -7,6 +7,7 @@ public class WeaponController : MonoBehaviour
     public GameObject Sword;
     public bool CanAttack = true;
     public float AttackCooldown = 1.0f;
+    public AudioClip SwordAttackSound;
 
     private void Update()
     {
@@ -24,6 +25,8 @@ public class WeaponController : MonoBehaviour
         CanAttack = false;
         Animator anim = Sword.GetComponent<Animator>();
         anim.SetTrigger("Attack");
+        AudioSource ac = GetComponent<AudioSource>();
+        ac.PlayOneShot(SwordAttackSound);
         StartCoroutine(ResetAttackCooldown());
     }
 
