@@ -2,5 +2,5 @@
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
 New Features:
-Reticle
+Reticle,
 Attack animation
