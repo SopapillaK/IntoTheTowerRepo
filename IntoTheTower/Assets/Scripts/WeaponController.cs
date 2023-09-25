@@ -10,6 +10,8 @@ public class WeaponController : MonoBehaviour
     public AudioClip SwordAttackSound;
     public bool IsAttacking = false;
 
+    
+
     private void Update()
     {
         if (Input.GetMouseButton(0))
