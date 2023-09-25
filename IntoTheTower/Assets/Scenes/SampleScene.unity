@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 1130318935}
   - component: {fileID: 1130318937}
   - component: {fileID: 1130318938}
+  - component: {fileID: 1130318939}
   m_Layer: 0
   m_Name: sword
   m_TagString: Untagged
@@ -806,6 +807,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.873568, y: 3.6746016, z: 27.093573}
   m_Center: {x: 0.32601953, y: 0.8372995, z: 13.046786}
+--- !u!114 &1130318939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130318932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e47ff888adda14b985630b154ef282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wc: {fileID: 1174004667}
 --- !u!1 &1151398658
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +946,7 @@ MonoBehaviour:
   CanAttack: 1
   AttackCooldown: 1
   SwordAttackSound: {fileID: 8300000, guid: 0712227ad7e0725499b27d93f2dd365b, type: 3}
+  IsAttacking: 0
 --- !u!82 &1174004668
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1691,6 +1706,7 @@ GameObject:
   - component: {fileID: 1854462951}
   - component: {fileID: 1854462950}
   - component: {fileID: 1854462954}
+  - component: {fileID: 1854462955}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1732,7 +1748,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5f1dc79937c8bc44a976b441d520af22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1770,7 +1786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854462949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7715735, y: 1, z: 8.0906105}
+  m_LocalPosition: {x: -2.771574, y: 1, z: 8.090611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1793,6 +1809,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1854462955
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854462949}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7dd20c92603ad64fba89a72eadaa771, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2121483286
 GameObject:
   m_ObjectHideFlags: 0
