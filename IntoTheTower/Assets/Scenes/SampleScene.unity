@@ -755,6 +755,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62d4a58a1ac4f143a38184963d89842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 0
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 0
+  timeBetweenAttacks: 0
+  sightRange: 0
+  attackRange: 0
+  playerInSightRange: 0
+  playerInAttackRange: 0
   enemy: {fileID: 1069982644}
 --- !u!95 &1069982644
 Animator:
@@ -1872,7 +1887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700276146}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EmptyEnemyParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2311,6 +2326,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62d4a58a1ac4f143a38184963d89842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 0
+  timeBetweenAttacks: 0
+  sightRange: 0
+  attackRange: 0
+  playerInSightRange: 0
+  playerInAttackRange: 0
   enemy: {fileID: 1854462955}
 --- !u!1 &1909874676
 GameObject:
