@@ -132,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //GameManager.instance.enemiesLeft--;
         Debug.Log("You died");
+        GameManager.instance.EndGameLose();
         //this.gameObject.SetActive(false); //Change to Destroy(this.gameObject) when having multiple enemies spawn in and die
     }
 }

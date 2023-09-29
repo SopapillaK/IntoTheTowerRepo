@@ -14,7 +14,7 @@ public class BulletBehavior : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("player"))
+        if (other.CompareTag("Player"))
         {
             other.gameObject.GetComponentInParent<PlayerMovement>().playerHP -= damage;
         }

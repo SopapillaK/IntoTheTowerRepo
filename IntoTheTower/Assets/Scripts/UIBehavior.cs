@@ -7,6 +7,7 @@ using TMPro;
 public class UIBehavior : MonoBehaviour
 {
     public GameObject winScreen;
+    public GameObject loseScreen;
 
     public static UIBehavior instance; // sets instance, allows me to call upon function and variables inside this script from other scripts
 
@@ -17,6 +18,7 @@ public class UIBehavior : MonoBehaviour
     public void SetScreen(GameObject screen) //sets screen for all future screens
     {
         winScreen.SetActive(false);
+        loseScreen.SetActive(false);
 
         screen.SetActive(true);
     }
