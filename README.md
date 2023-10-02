@@ -2,8 +2,7 @@
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
 New Features:
-Reticle,
-Attack animation,
-2 Enemies,
-Enemies can die,
-Win Screen and restart
+Enemy Patrolling
+Enemies can attack
+Player can take damage
+Player can die and lose
