@@ -31,12 +31,16 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    [SerializeField] Healthbar playerhealthbar;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
         readyToJump = true;
+        playerhealthbar.UpdateHealthBar(playerHP, maxPlayerHP);
+
     }
 
     private void Update()
@@ -114,13 +118,15 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
-    private int hp = 5; //Private value for hp
+    public int maxPlayerHP = 10;
+    private int hp = 10; //Private value for hp
     public int playerHP
     {
         get { return hp; }  //Get Doesn't need any functions, since we only need to check hp when changed
         set
         {
             hp = value; //Set hp equal to what it is supposed to be
+            playerhealthbar.UpdateHealthBar(playerHP, maxPlayerHP);
             if (hp <= 0)
             { //if has no HP left, disable the gameobject
                 Die();
