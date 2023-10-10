@@ -1,8 +1,4 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
-New Features:
-Enemy Patrolling
-Enemies can attack
-Player can take damage
-Player can die and lose
+New Features:healthbar on enemy, healthbar on player, start of melee enemy
