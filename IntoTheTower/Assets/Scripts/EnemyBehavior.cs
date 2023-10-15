@@ -11,10 +11,12 @@ public class EnemyBehavior : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+    public EnemyWeaponController weaponController; //Called myy class
+
     //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-    public GameObject projectile;
+    //public float timeBetweenAttacks;
+    //bool alreadyAttacked;
+    //public GameObject projectile;
 
     //States
     public float sightRange, attackRange;
@@ -50,24 +52,30 @@ public class EnemyBehavior : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-        if (!alreadyAttacked)
-        {
+        //if (!alreadyAttacked)
+        //{
             //Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
+            if (weaponController.CanAttack)
+            {
+                Debug.Log("made it through canAttack if statment");
+                weaponController.SwordAttack();
+                Debug.Log("SwordAttck fuct should run");
+            }
+            //Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
 
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up, ForceMode.Impulse);
+            //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            //rb.AddForce(transform.up, ForceMode.Impulse);
 
 
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+            //alreadyAttacked = true;
+            //Invoke(nameof(ResetAttack), timeBetweenAttacks);
+        //}
     }
 
-    private void ResetAttack()
-    {
-        alreadyAttacked = false;
-    } 
+    //private void ResetAttack()
+    //{
+    //    alreadyAttacked = false;
+    //} 
 
     //Animation
     public Animator enemy;
