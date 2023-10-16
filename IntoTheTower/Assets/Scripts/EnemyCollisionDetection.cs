@@ -14,7 +14,7 @@ public class EnemyCollisionDetection : MonoBehaviour
         if (other.tag == "Player" && ewc.IsAttacking)
         {
             Debug.Log(other.name);
-            other.GetComponent<PlayerMovement>().playerHP -= weaponDamage; //Get the hit target's HP script and inflicts damage on it
+            other.transform.GetComponentInParent<PlayerMovement>().playerHP -= weaponDamage; //Get the hit target's HP script and inflicts damage on it
             //Instantiate(HitParticle, new Vector3(other.transform.position.x,
             //transform.position.y, other.transform.position.z), 
             //other.transform.rotation); 
