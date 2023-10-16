@@ -1,4 +1,11 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
-New Features:healthbar on enemy, healthbar on player, start of melee enemy
+New Features: Enemies do a melee attack 
+
+Animation
+
+Collides
+
+Does damage to player
+
