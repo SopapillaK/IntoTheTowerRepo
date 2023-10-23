@@ -97,7 +97,7 @@ public class EnemyBehavior : MonoBehaviour
     public void Die()
     {
         GameManager.instance.enemiesLeft--;
-        this.gameObject.SetActive(false); //Change to Destroy(this.gameObject) when having multiple enemies spawn in and die
+        Destroy(this.gameObject.transform.parent.gameObject); //Change to Destroy(this.gameObject) when having multiple enemies spawn in and die
     }
     public void Start()
     {
