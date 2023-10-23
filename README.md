@@ -1,11 +1,10 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
-New Features: Enemies do a melee attack 
+New Features: Bug Fixes (enemies consistently follow and attack player)
 
-Animation
+Re-done NavMesh 
 
-Collides
+Decorated Level (Added fields, enemy zone)
 
-Does damage to player
 
