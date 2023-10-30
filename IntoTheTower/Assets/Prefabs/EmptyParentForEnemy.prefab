@@ -875,7 +875,7 @@ MonoBehaviour:
     m_Bits: 128
   weaponController: {fileID: 8504290587278778867}
   sightRange: 20
-  attackRange: 5
+  attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0
   enemyDead: 0
