@@ -1,10 +1,12 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
-New Features: Bug Fixes (enemies consistently follow and attack player)
+New Features: Added entrance animation into tower
+
+created illusion of a tower from outside
 
 Re-done NavMesh 
 
-Decorated Level (Added fields, enemy zone)
+Decorated Level (Added tees, rocks, grass, crates)
 
 
