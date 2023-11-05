@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
     private bool gameLose = false;
     public float restartDelay = 1f;
     private int enemies;
+    private int boss;
 
-    public int enemiesLeft
+    public int enemiesLeft 
     {
         get { return enemies; }
         set
@@ -21,8 +22,24 @@ public class GameManager : MonoBehaviour
             enemies = value;
             if (enemies <= 0)
             {
-                UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
-                EndGameWin();
+                //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
+                //EndGameWin();
+                Debug.Log("All smaller enemies defeated");
+            }
+        }
+    }
+
+    public int bossLeft //CHANGE TO IF BOSS IS DEAD
+    {
+        get { return boss; }
+        set
+        {
+            boss = value;
+            if (boss <= 0)
+            {
+                //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
+                //EndGameWin();
+                Debug.Log("Boss defeated, next floor available");
             }
         }
     }
