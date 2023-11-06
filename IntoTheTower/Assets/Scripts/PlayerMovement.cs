@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Healthbar playerhealthbar;
 
+    public GameObject redFlash;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -61,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        redFlash.SetActive(false);
     }
 
     private void MyInput()
@@ -127,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
         {
             hp = value; //Set hp equal to what it is supposed to be
             playerhealthbar.UpdateHealthBar(playerHP, maxPlayerHP);
+            RedFlash();
             if (hp <= 0)
             { //if has no HP left, disable the gameobject
                 Die();
@@ -140,5 +144,10 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("You died");
         GameManager.instance.EndGameLose();
         //this.gameObject.SetActive(false); //Change to Destroy(this.gameObject) when having multiple enemies spawn in and die
+    }
+
+    public void RedFlash()
+    {
+        redFlash.gameObject.SetActive(true);
     }
 }
