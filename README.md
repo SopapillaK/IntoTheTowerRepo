@@ -1,12 +1,22 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
+New Features:
 
-New Features: Added entrance animation into tower
+Added an effect when player hit
 
-created illusion of a tower from outside
+Second floor now exists and can be acessed from first floor
 
-Re-done NavMesh 
+Boss: 
 
-Decorated Level (Added tees, rocks, grass, crates)
+Boss HP/ HP bar
+
+Attack animation
+
+Enemy does damage to player
+
+Make sure faces the right direction
+
+When all enemies are defeated, exit door opens
+
 
 
