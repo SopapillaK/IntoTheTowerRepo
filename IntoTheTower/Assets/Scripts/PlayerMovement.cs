@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Healthbar playerhealthbar;
 
     public GameObject redFlash;
+    public bool redFlashOn;
 
     private void Start()
     {
@@ -63,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-        redFlash.SetActive(false);
     }
 
     private void MyInput()
@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
         {
             hp = value; //Set hp equal to what it is supposed to be
             playerhealthbar.UpdateHealthBar(playerHP, maxPlayerHP);
-            RedFlash();
+            StartCoroutine(RedFlashOn());
             if (hp <= 0)
             { //if has no HP left, disable the gameobject
                 Die();
@@ -146,8 +146,11 @@ public class PlayerMovement : MonoBehaviour
         //this.gameObject.SetActive(false); //Change to Destroy(this.gameObject) when having multiple enemies spawn in and die
     }
 
-    public void RedFlash()
+
+    IEnumerator RedFlashOn()
     {
-        redFlash.gameObject.SetActive(true);
+        redFlash.SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        redFlash.SetActive(false);
     }
 }

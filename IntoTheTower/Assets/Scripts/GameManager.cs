@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour
     private bool gameLose = false;
     public float restartDelay = 1f;
     private int enemies;
-    private int boss;
+    public bool allEnemiesDead;
+
+    public Animator exitDoorAnimator;
+
 
     public int enemiesLeft 
     {
@@ -24,24 +27,16 @@ public class GameManager : MonoBehaviour
             {
                 //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
                 //EndGameWin();
-                Debug.Log("All smaller enemies defeated");
+                allEnemiesDead = true;
+                Debug.Log("All enemies defeated Exit door now unlocked!");
+                Invoke("ExitFloor1", 3.0f);
             }
         }
     }
 
-    public int bossLeft //CHANGE TO IF BOSS IS DEAD
+    public void ExitFloor1()
     {
-        get { return boss; }
-        set
-        {
-            boss = value;
-            if (boss <= 0)
-            {
-                //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
-                //EndGameWin();
-                Debug.Log("Boss defeated, next floor available");
-            }
-        }
+        exitDoorAnimator.SetTrigger("PlayerExitFloor1");
     }
 
     private void Awake()
