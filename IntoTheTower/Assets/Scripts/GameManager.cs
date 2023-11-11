@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public bool allEnemiesDead;
 
     public Animator exitDoorAnimator;
+    public AudioClip exitDoorSound;
 
 
     public int enemiesLeft 
@@ -37,6 +38,8 @@ public class GameManager : MonoBehaviour
     public void ExitFloor1()
     {
         exitDoorAnimator.SetTrigger("PlayerExitFloor1");
+        AudioSource ac = GetComponent<AudioSource>();
+        ac.PlayOneShot(exitDoorSound);
     }
 
     private void Awake()

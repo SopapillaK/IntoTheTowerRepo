@@ -7,7 +7,7 @@ public class EnemyWeaponController : MonoBehaviour
     public GameObject EnemySword;
     public bool CanAttack = true;
     public float AttackCooldown = 1.0f;
-    //public AudioClip EnemySwordAttackSound;
+    public AudioClip EnemySwordAttackSound;
     public bool IsAttacking = false;
 
 
@@ -19,8 +19,8 @@ public class EnemyWeaponController : MonoBehaviour
         Animator anim = EnemySword.GetComponent<Animator>();
         Debug.Log("Enemy should set trigger for EnemySwordAttack");
         anim.SetTrigger("EnemySwordAttack");
-        //AudioSource ac = GetComponent<AudioSource>();
-        //ac.PlayOneShot(EnemySwordAttackSound);
+        AudioSource ac = GetComponent<AudioSource>();
+        ac.PlayOneShot(EnemySwordAttackSound);
         StartCoroutine(ResetAttackCooldown());
     }
 

@@ -79,8 +79,8 @@ public class EnemyBehavior : MonoBehaviour
 
     //Animation
     public Animator enemy;
-    public float maxHP = 5;
-    private float hp = 5; //Private value for hp
+    public float maxHP;
+    public float hp; //Private value for hp
     public float enemyHP { get { return hp; }  //Get Doesn't need any functions, since we only need to check hp when changed
         set 
         { hp = value; //Set hp equal to what it is supposed to be
