@@ -2,21 +2,19 @@
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 New Features:
 
-Added an effect when player hit
+Both doors have audio when the go up/ go down
 
-Second floor now exists and can be acessed from first floor
+Ambiance audio always playing now
 
-Boss: 
+Enemies color not orange and when they swing their door a sound plays
 
-Boss HP/ HP bar
+Boss have audio when it swings sword
 
-Attack animation
+Boss has actual boss area 
 
-Enemy does damage to player
+Added text to better show player objective
 
-Make sure faces the right direction
-
-When all enemies are defeated, exit door opens
+added more grass and plants to better fill out the space
 
 
 
