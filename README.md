@@ -6,7 +6,7 @@ Both doors have audio when the go up/ go down
 
 Ambiance audio always playing now
 
-Enemies color not orange and when they swing their door a sound plays
+Enemies color changed to orange and when they swing their sword a sound plays
 
 Boss have audio when it swings sword
 
