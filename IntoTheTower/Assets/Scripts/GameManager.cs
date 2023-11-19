@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 1f;
     private int enemies;
     public bool allEnemiesDead;
+    public GameObject BossRockBlock;
 
     public Animator exitDoorAnimator;
     public AudioClip exitDoorSound;
@@ -24,6 +25,14 @@ public class GameManager : MonoBehaviour
         set
         {
             enemies = value;
+            if (enemies <= 1)
+            {
+                BossRockBlock.SetActive(false);
+            }
+            else
+            {
+                BossRockBlock.SetActive(true);
+            }
             if (enemies <= 0)
             {
                 //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);

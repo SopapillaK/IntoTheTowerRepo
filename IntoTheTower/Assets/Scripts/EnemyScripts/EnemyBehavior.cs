@@ -52,8 +52,7 @@ public class EnemyBehavior : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-        //if (!alreadyAttacked)
-        //{
+
             //Attack code here
             if (weaponController.CanAttack)
             {
@@ -71,11 +70,6 @@ public class EnemyBehavior : MonoBehaviour
             //Invoke(nameof(ResetAttack), timeBetweenAttacks);
         //}
     }
-
-    //private void ResetAttack()
-    //{
-    //    alreadyAttacked = false;
-    //} 
 
     //Animation
     public Animator enemy;
