@@ -2,19 +2,13 @@
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 New Features:
 
-Enemies color changed to orange.
+As a newer player, I want instruction on what I need to do to go to the next floor so that I am not confused.
 
-Added more grass and plants to better fill out the space.
+As a hard core player, I want the boss to have a higher health so that there is more challenge to beat it.
 
-As an audio based player, I want to be able to hear when the doors open or closed because it adds to the atmosphere.
+As a skilled player, I want something to indicate all my controls so that I can play to my fullest.
 
-As an audio based player, I want to be able to hear the sword swings for the boss and enemies so that I don't have to be looking right at them to know when they swung.
-
-As a visual player, I want the boss area to be decorated so that it is more visually interesting.
-
-As an atmospheric player, I want to be able to hear the environment so that I feel like I'm really there.
-
-As a new to games player, I want better direction of what I need to do so that I'm not confused on what to do next.
+As a classic player, I want the boss to be unlocked so that I can't fight it first.
 
 
 REFERENCES:
