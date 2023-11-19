@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private int enemies;
     public bool allEnemiesDead;
     public GameObject BossRockBlock;
+    public GameObject F1ExitCollider;
 
     public Animator exitDoorAnimator;
     public AudioClip exitDoorSound;
@@ -38,8 +39,12 @@ public class GameManager : MonoBehaviour
                 //UIBehavior.instance.SetScreen(UIBehavior.instance.winScreen);
                 //EndGameWin();
                 allEnemiesDead = true;
-                Debug.Log("All enemies defeated Exit door now unlocked!");
+                F1ExitCollider.SetActive(false);
                 Invoke("ExitFloor1", 3.0f);
+            }
+            else
+            {
+                F1ExitCollider.SetActive(true);
             }
         }
     }
