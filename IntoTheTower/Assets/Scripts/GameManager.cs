@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private int enemies;
     public bool allEnemiesDead;
     public GameObject BossRockBlock;
+    public GameObject BossRockCollider;
     public GameObject F1ExitCollider;
 
     public Animator exitDoorAnimator;
@@ -29,10 +30,12 @@ public class GameManager : MonoBehaviour
             if (enemies <= 1)
             {
                 BossRockBlock.SetActive(false);
+                BossRockCollider.SetActive(false);
             }
             else
             {
                 BossRockBlock.SetActive(true);
+                BossRockCollider.SetActive(true);
             }
             if (enemies <= 0)
             {
