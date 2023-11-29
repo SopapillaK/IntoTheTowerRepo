@@ -1,14 +1,13 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
+
 New Features:
 
-As a newer player, I want instruction on what I need to do to go to the next floor so that I am not confused.
+As an audio based player, I want to be able to hear when the rock disappear so that I don't have to be looking at it to see if I opened it.
 
-As a hard core player, I want the boss to have a higher health so that there is more challenge to beat it.
+As a player that misses visual details, I want something to indicate that there is a boss area that is blocked so that I know it's there.
 
-As a skilled player, I want something to indicate all my controls so that I can play to my fullest.
-
-As a classic player, I want the boss to be unlocked so that I can't fight it first.
+As a skilled player, I want a way to adjust the mouse sensitivity so that I can play to my fullest.
 
 
 REFERENCES:
