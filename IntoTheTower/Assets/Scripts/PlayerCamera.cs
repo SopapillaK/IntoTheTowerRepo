@@ -6,6 +6,7 @@ public class PlayerCamera : MonoBehaviour
 {
     public float sensX;
     public float sensY;
+    private float cameraSpeed = 50;
 
     public Transform orientation;
 
@@ -21,8 +22,8 @@ public class PlayerCamera : MonoBehaviour
     private void Update()
     {
         // get mouse input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * cameraSpeed * sensX;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * cameraSpeed * sensY;
 
         yRotation += mouseX;
 

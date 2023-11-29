@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public bool allEnemiesDead;
     public GameObject BossRockBlock;
     public GameObject BossRockCollider;
+    public AudioClip BossRockFall;
     public GameObject F1ExitCollider;
 
     public Animator exitDoorAnimator;
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
             {
                 BossRockBlock.SetActive(false);
                 BossRockCollider.SetActive(false);
+                AudioSource ac = GetComponent<AudioSource>();
+                ac.PlayOneShot(BossRockFall);
             }
             else
             {
