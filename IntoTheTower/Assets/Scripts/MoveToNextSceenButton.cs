@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Controls: MonoBehaviour
+public class MoveToNextSceenButton : MonoBehaviour
 {
     public void StartGame()
     {
