@@ -67,15 +67,15 @@ public class GameManager : MonoBehaviour
         instance = this; 
     }
 
-    public void EndGameWin()
-    {
-        if (gameWon == false)
-        {
-            gameWon = true;
-            Debug.Log("Game Won");
-            Invoke("Restart", restartDelay);
-        }
-    }
+    //public void EndGameWin()
+    //{
+    //    if (gameWon == false)
+    //    {
+    //        gameWon = true;
+    //        Debug.Log("Game Won");
+    //        Invoke("Restart", restartDelay);
+    //    }
+    //}
 
     public void EndGameLose()
     {
