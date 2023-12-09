@@ -3,11 +3,13 @@ Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
 New Features:
 
-As an audio based player, I want to be able to hear when the rock disappear so that I don't have to be looking at it to see if I opened it.
+As a classic player, I want the boss to be restricted to the boss area so that it can't just chase me around the whole floor.
 
-As a player that misses visual details, I want something to indicate that there is a boss area that is blocked so that I know it's there.
+As a player with eyes, I want the outside of the tower to not be light blue so that I don't think I'm looking at the sky.
 
-As a skilled player, I want a way to adjust the mouse sensitivity so that I can play to my fullest.
+As a player with a bigger monitor, I want the UI to scale according to the monitor so that I can always know what my health is and I can always easily see the text for controls.
+
+(ONLY WORKS IN UNITY) As a player who wants to play games again and again, I want to be able to restart my game manually so that I can do it again without having to die.
 
 
 REFERENCES:
