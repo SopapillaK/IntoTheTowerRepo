@@ -1,6 +1,8 @@
 # IntoTheTowerRepo
 Test: https://sopapillak.github.io/IntoTheTowerRepo/
 
+Trailer: https://youtu.be/iOjapJFyXE0
+
 New Features:
 
 As a classic player, I want the boss to be restricted to the boss area so that it can't just chase me around the whole floor.
