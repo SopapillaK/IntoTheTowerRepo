@@ -16,6 +16,11 @@ As a player with a bigger monitor, I want the UI to scale according to the monit
 (ONLY WORKS IN UNITY) As a player who wants to play games again and again, I want to be able to restart my game manually so that I can do it again without having to die.
 
 
+ASSETS:
+https://assetstore.unity.com/packages/3d/environments/industrial/low-poly-farm-pack-lite-188100
+
+https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
+
 REFERENCES:
 https://www.youtube.com/watch?v=aNZw588BQBo
 https://www.youtube.com/watch?v=_lREXfAMUcE&t=300s
